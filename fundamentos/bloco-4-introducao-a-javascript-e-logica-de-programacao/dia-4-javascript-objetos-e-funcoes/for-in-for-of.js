@@ -53,3 +53,9 @@
 // for(let index2 in car){
 //     console.log(index2, car[index2]);
 // };
+
+function bomDiaTryber(nome){
+    console.log('Bom dia, ' + nome + '!');
+}
+
+bomDiaTryber(true);
