@@ -56,42 +56,43 @@
         */
 
         function mudaTexto(){
-          let para = document.getElementsByTagName('p')[1];
-          para.innerHTML = "Estar bem empregado e focado no desenvolvimento de novas habilidades."
+          const mudaTexto = document.getElementsByTagName('p')[1];
+          mudaTexto.innerText = "Espero estar atuando na área em uma grande empresa e desenvolvendo minhas habilidades dia a dia!"
         }
         mudaTexto();
 
         function alteraCor(){
-          let quadrado = document.getElementsByClassName('main-content')[0]
-          quadrado.style.background = "rgb(76,164,109)"
+          const alteraCor = document.getElementsByClassName('main-content')[0];
+          alteraCor.style.background = "rgb(76,164,109)"
         }
         alteraCor();
 
-        function alteraCorQuadradoInterno(){
-          let quadradoInterno = document.getElementsByClassName('center-content')[0];
-          quadradoInterno.style.background = "white";
+        function alteraCorParaBranco(){
+          const alteraCorParaBranco = document.getElementsByClassName('center-content')[0];
+          alteraCorParaBranco.style.background = "white";
         }
-        alteraCorQuadradoInterno();
+        alteraCorParaBranco();
 
         function corrigeTexto(){
-          let corrigeTexto = document.getElementsByTagName('h1')[0];
-          corrigeTexto.innerText = "Exercício 5.1 - JavaScript "
+          const corrige = document.getElementsByTagName('h1')[0];
+          corrige.innerText = "Exercício 5.1 - JavaScript"
         }
         corrigeTexto();
 
-        function convertUpperCase(){
-          let convertUpperCase = document.getElementsByTagName('p')[0];
-          convertUpperCase.innerText = convertUpperCase.innerText.toUpperCase();
+        function tudoMaiusculo(){
+          const p = document.getElementsByTagName('p')[0];
+          p.innerText = p.innerText.toUpperCase();
         }
-        convertUpperCase();
+        tudoMaiusculo();
 
-        function exibeConteudoTagsP(){
-          let paragrafos = document.getElementsByTagName('p');
-          for(let index = 0; index < paragrafos.length; index += 1 ){
-            console.log(paragrafos[index].innerHTML)
-          }
+        function exibeConteudoP(){
+          const exibe = document.getElementsByTagName('p');
+          for(let i = 0; i < exibe.length; i += 1){
+          console.log(exibe[i].innerHTML)
         }
-        exibeConteudoTagsP();
+      }
+        exibeConteudoP();
+
     </script>
   </body>
 </html>
