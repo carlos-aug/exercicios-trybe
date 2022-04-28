@@ -54,45 +54,36 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-
-        function mudaTexto(){
-          const mudaTexto = document.getElementsByTagName('p')[1];
-          mudaTexto.innerText = "Espero estar atuando na área em uma grande empresa e desenvolvendo minhas habilidades dia a dia!"
+        function paragraph(){
+        const paragraph = document.getElementsByTagName("p")[1];
+        paragraph.innerText = "Espero estar atuando numa boa empresa e me especializando cada vez mais."
         }
-        mudaTexto();
-
-        function alteraCor(){
-          const alteraCor = document.getElementsByClassName('main-content')[0];
-          alteraCor.style.background = "rgb(76,164,109)"
+        paragraph();
+        
+        function colorSquare(){
+        const colorSquare = document.getElementsByClassName("main-content")[0];
+        colorSquare.style.background = "rgb(76,164,109)"
         }
-        alteraCor();
+        colorSquare();
+        
+        function colorSquareCenter(){
+        const colorSquareCenter = document.querySelector("section");
+        colorSquareCenter.style.backgroundColor = "white";
+        } 
+        colorSquareCenter();
 
-        function alteraCorParaBranco(){
-          const alteraCorParaBranco = document.getElementsByClassName('center-content')[0];
-          alteraCorParaBranco.style.background = "white";
+        function title(){
+        const title = document.querySelector('.title');
+        title.innerText = "Exercício 5.1 - JavaScript"
         }
-        alteraCorParaBranco();
+        title();
 
-        function corrigeTexto(){
-          const corrige = document.getElementsByTagName('h1')[0];
-          corrige.innerText = "Exercício 5.1 - JavaScript"
-        }
-        corrigeTexto();
+        const firstP = document.querySelector("p");
+        firstP.style.textTransform = "uppercase"
 
-        function tudoMaiusculo(){
-          const p = document.getElementsByTagName('p')[0];
-          p.innerText = p.innerText.toUpperCase();
-        }
-        tudoMaiusculo();
-
-        function exibeConteudoP(){
-          const exibe = document.getElementsByTagName('p');
-          for(let i = 0; i < exibe.length; i += 1){
-          console.log(exibe[i].innerHTML)
-        }
-      }
-        exibeConteudoP();
-
+        const allP = document.getElementsByTagName('p');
+        for(let index = 0; index < allP.length; index += 1)
+          console.log(allP[index].innerHTML);
     </script>
   </body>
 </html>
