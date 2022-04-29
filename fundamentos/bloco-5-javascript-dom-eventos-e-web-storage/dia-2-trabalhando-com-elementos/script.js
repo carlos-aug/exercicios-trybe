@@ -3,6 +3,7 @@
 
 const heading = document.createElement('h1');
 heading.innerText = "5.2 - JavaScript";
+heading.className = "title";
 document.body.appendChild(heading);
 console.log(heading);
 
